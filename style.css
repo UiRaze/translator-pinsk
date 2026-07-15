@@ -47,6 +47,13 @@ a {
   text-decoration: none;
 }
 
+.icon-sprite {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
 button,
 summary {
   font: inherit;
@@ -370,6 +377,17 @@ h3 {
   font-weight: 800;
 }
 
+.card-icon svg,
+.contact-link svg {
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
 .card p,
 .advantage-card p,
 .step p,
@@ -454,6 +472,7 @@ h3 {
 .contact-link {
   display: flex;
   align-items: center;
+  gap: 12px;
   min-height: 48px;
   padding: 12px 14px;
   border: 1px solid var(--border);
@@ -462,6 +481,11 @@ h3 {
   color: var(--primary);
   font-weight: 700;
   overflow-wrap: anywhere;
+}
+
+.contact-link svg {
+  flex: 0 0 auto;
+  color: var(--accent-dark);
 }
 
 .contact-link:hover,
@@ -488,6 +512,16 @@ h3 {
   color: #ffffff;
   font-weight: 800;
   box-shadow: 0 16px 34px rgba(16, 32, 51, 0.24);
+}
+
+.messenger-link svg {
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .messenger-toggle {
@@ -528,6 +562,10 @@ h3 {
 
 .messenger-link--telegram {
   background: #229ed9;
+}
+
+.messenger-link--max {
+  background: #0077ff;
 }
 
 .messenger-link--whatsapp {
